@@ -169,16 +169,13 @@ def streamlit_ui():
     st.sidebar.header("Settings")
     output_format = st.sidebar.selectbox("Output Format", ["txt", "docx"], index=1)
     
-    # Main UI
-    col1, col2 = st.columns([1, 1])
+
     
-    with col1:
-        st.subheader("Upload Template")
-        uploaded_file = st.file_uploader("Choose a template file", type=["txt", "docx", "pdf", "md"])
-        
-    with col2:
-        st.subheader("Transformation Query")
-        query = st.text_area("Enter your query or instructions", height=150)
+    st.subheader("Upload Template")
+    uploaded_file = st.file_uploader("Choose a template file", type=["txt", "docx", "pdf", "md"])
+    
+    st.subheader("Transformation Query")
+    query = st.text_area("Enter your query or instructions", height=150)
     
     # Initialize session state
     if 'template_content' not in st.session_state:

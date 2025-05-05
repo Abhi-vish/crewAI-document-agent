@@ -10,6 +10,8 @@ def create_tasks(research_agent,template_analyzer, content_generator, document_a
             3. Use the web scraper to extract detailed information from relevant websites
             4. Synthesize the information into a comprehensive research report
             5. Organize the research in a way that will be useful for content generation
+            6. Strictly do not enclose any heading inside ** or ** tags.
+            7. use #, ##, ### for headings and subheadings.
             
             Return a comprehensive research report with current information.
         """,
@@ -26,6 +28,8 @@ def create_tasks(research_agent,template_analyzer, content_generator, document_a
             3. Identify placeholders or content areas that need to be replaced
             4. Determine the document's style, tone, and voice
             5. Create a detailed structural map of the document
+            6. Strictly do not enclose any heading inside ** or ** tags.
+            7. use #, ##, ### for headings and subheadings.
             
             Return a JSON object with the complete analysis.
         """,
@@ -44,6 +48,8 @@ def create_tasks(research_agent,template_analyzer, content_generator, document_a
             5. Incorporate relevant statistics, trends, and information from the research
             6. Ensure the content maintains consistent style, tone, and voice
             7. Format the content according to the template's patterns
+            6. Strictly do not enclose any heading inside ** or ** tags.
+            7. use #, ##, ### for headings and subheadings.
             
             Return the generated content organized according to the template structure.
         """,
@@ -62,6 +68,8 @@ def create_tasks(research_agent,template_analyzer, content_generator, document_a
             4. Verify that all research data is correctly incorporated
             5. Make adjustments as needed to maintain document coherence
             6. Finalize the document, ensuring it looks professional and well-structured
+            6. Strictly do not enclose any heading inside ** or ** tags.
+            7. use #, ##, ### for headings and subheadings.
             
             Return the complete, transformed document.
         """,

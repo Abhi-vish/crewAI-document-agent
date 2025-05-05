@@ -2,6 +2,9 @@ from crewai import Agent,LLM
 from dotenv import load_dotenv
 import os
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool
+from dotenv import load_dotenv
+
+load_dotenv()
 
 os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
 
@@ -31,7 +34,7 @@ def create_research_agent():
         verbose=True,
         allow_delegation=False,
         tools=[search_tool, scraper_tool],
-        max_iter=2,
+        max_iter=4,
     )
 
 def create_template_analyzer():
